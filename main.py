@@ -4,8 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-if st.button('Нажми на меня'):
-  st.write('Привет, мир!')
 
 
 # Название
@@ -32,6 +30,8 @@ st.error("Error")
 # st.snow()
 # st.balloons()
 
+if st.button('Нажми на меня'):
+  st.write('Привет, мир!')
 
 
 df = pd.DataFrame({
