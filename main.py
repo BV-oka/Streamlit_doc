@@ -53,11 +53,13 @@ st.write(pd.DataFrame({
 # таблички
 
 # интерактивная табличка
+st.text("интерактивная табличка")
 
 dataframe = np.random.randn(10, 20)
 st.dataframe(dataframe)
 
 # интерактивная с выделенным элементом
+st.text("интерактивная табличка с выделенным элементом")
 
 dataframe = pd.DataFrame(
     np.random.randn(10, 20),
