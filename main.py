@@ -39,6 +39,90 @@ df = pd.DataFrame({
   'second column': [10, 20, 30, 40]
 })
 
+st.divider()
+
+st.write("Here's our first attempt at using data to create a table:")
+st.write(pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40]
+}))
+
+# таблички
+
+# интерактивная табличка
+
+dataframe = np.random.randn(10, 20)
+st.dataframe(dataframe)
+
+# интерактивная с выделенным элементом
+
+dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+
+st.dataframe(dataframe.style.highlight_max(axis=0))
+
+# статическая табличка
+
+dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+st.table(dataframe)
+
+
+# переключатели
+status = st.radio("выберите вариант: ", ('да', 'нет'))
+
+if (status == 'да'):
+    st.success("да")
+else:
+    st.success("нет")
+    
+  
+
+status = st.radio("выберите вариант: ", ('да', 'нет'), horizontal=True)
+
+if (status == 'да'):
+    st.success("да")
+else:
+    st.success("нет")
+    st.snow()
+
+
+
+genre = st.radio(
+    "What's your favorite movie genre",
+    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
+
+if genre == ':rainbow[Comedy]':
+    st.success('You selected comedy.')
+else:
+    st.write("You didn\'t select comedy.")
+
+
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
+
+
+# слайдеры
+
+# age = st.slider('How old are you?', 0, 130, 25)
+# st.write("I'm ", age, 'years old')
+
+
+
+values = st.slider(
+    'Select a range of values',
+    0.0, 100.0, (25.0, 75.0))
+st.write('Values:', values)
+
+
+
+
 df
 
 
