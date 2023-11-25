@@ -127,6 +127,13 @@ st.write('Values:', values)
 
 
 
+# с помощью st.line_chart(). Мы сгенерируем случайную выборку с помощью Numpy, а затем нанесем ее на график.
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
 
 
 
