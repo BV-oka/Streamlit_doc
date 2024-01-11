@@ -1,2 +1,2 @@
 # Streamlit_doc
-Документация по стреамлит
+Документация по стреамлит https://appdoc-w29spwwytjdgdtctumrlew.streamlit.app/
