@@ -138,11 +138,8 @@ st.line_chart(chart_data)
 # график
 
 chart_data = pd.DataFrame(
-     {
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-},
-     columns=['муж', 'жен', 'c'])
+     np.random.randn(20, 3),
+     columns=['муж', 'жен', 'дети'])
 
 st.line_chart(chart_data)
 
