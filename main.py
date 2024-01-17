@@ -135,6 +135,12 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
+# график
 
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['муж', 'жен', 'c'])
+
+st.line_chart(chart_data)
 
 
