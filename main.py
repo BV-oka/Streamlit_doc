@@ -143,4 +143,10 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
+# "Energy Costs By Month"
+    chart_data = pd.DataFrame(
+     [10, 13, 11],
+     columns=["Energy Costs"])
+ 
+    st.bar_chart(chart_data)
 
